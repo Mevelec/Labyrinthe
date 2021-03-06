@@ -4,7 +4,7 @@ Projet developpe et teste sous visual studio 2019 et sous windows 10 x86
 
 ## Objectif
 L'objectif de ce projet est de réaliser un programme qui charge un fichier, affiche un labyrinthe essai de le résoudre et affichage le nombre de coups avant résolution du labyrinthe.
-[![Video de démonstration]](screenshots/screen_1.PNG)(https://youtu.be/WjgM7qOo06I)
+![Video de démonstration](https://github.com/Mevelec/Labyrinthe/blob/main/screenshots/screen_1.PNG)(https://youtu.be/WjgM7qOo06I)
 ## Algorithmes de résolution
 - déplacement en ligne droite et tourne à droite quand bloqué
 - déplacement en ligne droite et tourne à gauche quand bloqué
