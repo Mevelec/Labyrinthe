@@ -1,0 +1,301 @@
+\hypertarget{classolc_console_game_engine}{}\doxysection{olc\+Console\+Game\+Engine Class Reference}
+\label{classolc_console_game_engine}\index{olcConsoleGameEngine@{olcConsoleGameEngine}}
+
+
+{\ttfamily \#include $<$ol\+Console.\+h$>$}
+
+Inheritance diagram for olc\+Console\+Game\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classolc_console_game_engine}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structolc_console_game_engine_1_1s_key_state}{s\+Key\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classolc_console_game_engine_a585fa5e569a289ba7e45fbf60d29123d}{begin\+Paint}} ()
+\item 
+void \mbox{\hyperlink{classolc_console_game_engine_ac3fcea434ea87f56d940bf6e6bc3b822}{draw\+Rect}} (int x, int y, int xm, int ym, const COLORREF \&color=WHITE)
+\item 
+void \mbox{\hyperlink{classolc_console_game_engine_a63faea0d56f92612d679cdef2de678bc}{draw\+Circle}} (int x, int y, int xm, int ym, const COLORREF \&color=WHITE)
+\item 
+void \mbox{\hyperlink{classolc_console_game_engine_a7751878a421867ab3341699268ac3ca8}{draw\+Text}} (COORD pos, const LPCWSTR \&str, const COLORREF \&color=WHITE)
+\item 
+void \mbox{\hyperlink{classolc_console_game_engine_af8d2e21dbf8d70b224e5035f51251293}{draw\+Text}} (size\+\_\+t line, size\+\_\+t offset, const LPCWSTR \&str, const COLORREF \&color=WHITE)
+\item 
+void \mbox{\hyperlink{classolc_console_game_engine_a2d1825eefbf08d3d452cf0fef93c48f1}{end\+Paint}} ()
+\item 
+void \mbox{\hyperlink{classolc_console_game_engine_a25835d79f53da4a36850559f8f1226ed}{Start}} ()
+\item 
+virtual bool \mbox{\hyperlink{classolc_console_game_engine_a13189b928731ef61b4022072edbcbb6e}{On\+User\+Create}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classolc_console_game_engine_ab6fa27165340ce35e5bd3067d0f561c5}{On\+User\+Update}} (float f\+Elapsed\+Time)=0
+\item 
+virtual bool \mbox{\hyperlink{classolc_console_game_engine_a3ee962119360d35a3939078a04e89cf0}{On\+User\+Destroy}} ()
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a3935daac9c0e8a4ca92a097a5201a6a3}\label{classolc_console_game_engine_a3935daac9c0e8a4ca92a097a5201a6a3}} 
+\mbox{\hyperlink{structolc_console_game_engine_1_1s_key_state}{s\+Key\+State}} {\bfseries Get\+Key} (int n\+Key\+ID)
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a64f1d1aefd95cb025d6a4fe8898fcf3a}\label{classolc_console_game_engine_a64f1d1aefd95cb025d6a4fe8898fcf3a}} 
+int {\bfseries Get\+MouseX} ()
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a16855913c4cb75bd753b9566e710c663}\label{classolc_console_game_engine_a16855913c4cb75bd753b9566e710c663}} 
+int {\bfseries Get\+MouseY} ()
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aee58b0b83551ff453d5669bcbe1cb8bb}\label{classolc_console_game_engine_aee58b0b83551ff453d5669bcbe1cb8bb}} 
+\mbox{\hyperlink{structolc_console_game_engine_1_1s_key_state}{s\+Key\+State}} {\bfseries Get\+Mouse} (int n\+Mouse\+Button\+ID)
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aa0dd52c11bc80fafa502c4e5c29cfe92}\label{classolc_console_game_engine_aa0dd52c11bc80fafa502c4e5c29cfe92}} 
+bool {\bfseries Is\+Focused} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aa9904fb6880cf83841e51d67d07db731}\label{classolc_console_game_engine_aa9904fb6880cf83841e51d67d07db731}} 
+int {\bfseries Error} (const wchar\+\_\+t $\ast$msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a682975490166e58edf4330dcbc7d7182}\label{classolc_console_game_engine_a682975490166e58edf4330dcbc7d7182}} 
+static BOOL {\bfseries Close\+Handler} (DWORD evt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_af806c8a71fcadddf80716674e9047a17}\label{classolc_console_game_engine_af806c8a71fcadddf80716674e9047a17}} 
+struct \mbox{\hyperlink{structolc_console_game_engine_1_1s_key_state}{olc\+Console\+Game\+Engine\+::s\+Key\+State}} {\bfseries m\+\_\+keys} \mbox{[}256\mbox{]}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a2a07102e86182674c7b9128e864046d8}\label{classolc_console_game_engine_a2a07102e86182674c7b9128e864046d8}} 
+struct \mbox{\hyperlink{structolc_console_game_engine_1_1s_key_state}{olc\+Console\+Game\+Engine\+::s\+Key\+State}} {\bfseries m\+\_\+mouse} \mbox{[}5\mbox{]}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a08ec981e6573c1aa7de84c179902f05c}\label{classolc_console_game_engine_a08ec981e6573c1aa7de84c179902f05c}} 
+int {\bfseries m\+\_\+mouse\+PosX}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a1aeef47a142df05535f1472ad4014834}\label{classolc_console_game_engine_a1aeef47a142df05535f1472ad4014834}} 
+int {\bfseries m\+\_\+mouse\+PosY}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a2b2d6f63ad4eea2a0514f8d82daf23d4}\label{classolc_console_game_engine_a2b2d6f63ad4eea2a0514f8d82daf23d4}} 
+int {\bfseries m\+\_\+n\+Screen\+Width}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aa618d76e0f29ca8c1961230b85abd6e3}\label{classolc_console_game_engine_aa618d76e0f29ca8c1961230b85abd6e3}} 
+int {\bfseries m\+\_\+n\+Screen\+Height}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a4c508b3f2084c74f0e86d7cda30a31d7}\label{classolc_console_game_engine_a4c508b3f2084c74f0e86d7cda30a31d7}} 
+CHAR\+\_\+\+INFO $\ast$ {\bfseries m\+\_\+buf\+Screen}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aa9d0700fe495760a66773a9bfa9cb614}\label{classolc_console_game_engine_aa9d0700fe495760a66773a9bfa9cb614}} 
+std\+::wstring {\bfseries m\+\_\+s\+App\+Name}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a0a817e3d4f01bbb966073cb9252bc193}\label{classolc_console_game_engine_a0a817e3d4f01bbb966073cb9252bc193}} 
+HANDLE {\bfseries m\+\_\+h\+Original\+Console}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a5afa2cdcd3727613ccf87e28ecabf1a6}\label{classolc_console_game_engine_a5afa2cdcd3727613ccf87e28ecabf1a6}} 
+CONSOLE\+\_\+\+SCREEN\+\_\+\+BUFFER\+\_\+\+INFO {\bfseries m\+\_\+\+Original\+Console\+Info}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_ab4b0abf33348a2d736741c07464f0752}\label{classolc_console_game_engine_ab4b0abf33348a2d736741c07464f0752}} 
+HANDLE {\bfseries m\+\_\+h\+Console}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a9a2545ebf740c7471419b085f3a03a25}\label{classolc_console_game_engine_a9a2545ebf740c7471419b085f3a03a25}} 
+HANDLE {\bfseries m\+\_\+h\+Console\+In}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a6444ccf4b252693059d5a38e93d85168}\label{classolc_console_game_engine_a6444ccf4b252693059d5a38e93d85168}} 
+SMALL\+\_\+\+RECT {\bfseries m\+\_\+rect\+Window}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aadb5eb4f3721b6c70889d573e27649fd}\label{classolc_console_game_engine_aadb5eb4f3721b6c70889d573e27649fd}} 
+short {\bfseries m\+\_\+key\+Old\+State} \mbox{[}256\mbox{]} = \{ 0 \}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a7150584572e54534f756fa6ffe3c0cd2}\label{classolc_console_game_engine_a7150584572e54534f756fa6ffe3c0cd2}} 
+short {\bfseries m\+\_\+key\+New\+State} \mbox{[}256\mbox{]} = \{ 0 \}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aaea3b869b9e5ad40714b03ca28e54f44}\label{classolc_console_game_engine_aaea3b869b9e5ad40714b03ca28e54f44}} 
+bool {\bfseries m\+\_\+mouse\+Old\+State} \mbox{[}5\mbox{]} = \{ 0 \}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a57d3a2ec0b3ee4d7da32cf5762508a4c}\label{classolc_console_game_engine_a57d3a2ec0b3ee4d7da32cf5762508a4c}} 
+bool {\bfseries m\+\_\+mouse\+New\+State} \mbox{[}5\mbox{]} = \{ 0 \}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_aae45ff42154689ee7aef6cecc90fded2}\label{classolc_console_game_engine_aae45ff42154689ee7aef6cecc90fded2}} 
+bool {\bfseries m\+\_\+b\+Console\+In\+Focus} = true
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_ab422c5203c7c2e4973f88355561fa3d9}\label{classolc_console_game_engine_ab422c5203c7c2e4973f88355561fa3d9}} 
+bool {\bfseries m\+\_\+b\+Enable\+Sound} = false
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a90b476225de4230c6a689560a48d5328}\label{classolc_console_game_engine_a90b476225de4230c6a689560a48d5328}} 
+HWND {\bfseries myconsole}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a3d661a31def534309ee87f8defe8b62a}\label{classolc_console_game_engine_a3d661a31def534309ee87f8defe8b62a}} 
+HDC {\bfseries hdc\+Console}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_acc73f8f8d3fa787403d321df32c81c32}\label{classolc_console_game_engine_acc73f8f8d3fa787403d321df32c81c32}} 
+HDC {\bfseries hdc\+Memoire}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a532c84cb261ba084df050e332ea543f3}\label{classolc_console_game_engine_a532c84cb261ba084df050e332ea543f3}} 
+HBITMAP {\bfseries bitmap}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_ac9122c5718c87ee3142a33a926f9c202}\label{classolc_console_game_engine_ac9122c5718c87ee3142a33a926f9c202}} 
+PAINTSTRUCT {\bfseries ps}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a4661c87251a04d16e8591e32d13da0ea}\label{classolc_console_game_engine_a4661c87251a04d16e8591e32d13da0ea}} 
+static std\+::atomic$<$ bool $>$ {\bfseries m\+\_\+b\+Atom\+Active}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a790dab832fc465ba6b3faabe1e4e4c81}\label{classolc_console_game_engine_a790dab832fc465ba6b3faabe1e4e4c81}} 
+static std\+::condition\+\_\+variable {\bfseries m\+\_\+cv\+Game\+Finished}
+\item 
+\mbox{\Hypertarget{classolc_console_game_engine_a8cefac3897d17f1d9f57254b78cf38d6}\label{classolc_console_game_engine_a8cefac3897d17f1d9f57254b78cf38d6}} 
+static std\+::mutex {\bfseries m\+\_\+mux\+Game}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+consol\+Rendering. thank to @\+Javidx9 for the game loop and key input manager 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classolc_console_game_engine_a585fa5e569a289ba7e45fbf60d29123d}\label{classolc_console_game_engine_a585fa5e569a289ba7e45fbf60d29123d}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!beginPaint@{beginPaint}}
+\index{beginPaint@{beginPaint}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{beginPaint()}{beginPaint()}}
+{\footnotesize\ttfamily void olc\+Console\+Game\+Engine\+::begin\+Paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+beginpaint must be called before every paint. it create a buffer in which we draw \mbox{\Hypertarget{classolc_console_game_engine_a63faea0d56f92612d679cdef2de678bc}\label{classolc_console_game_engine_a63faea0d56f92612d679cdef2de678bc}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void olc\+Console\+Game\+Engine\+::draw\+Circle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{xm,  }\item[{int}]{ym,  }\item[{const COLORREF \&}]{color = {\ttfamily WHITE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+draw a circle in the rectangle from (x, y) to (mx, my) of given color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em xm} & \\
+\hline
+{\em ym} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classolc_console_game_engine_ac3fcea434ea87f56d940bf6e6bc3b822}\label{classolc_console_game_engine_ac3fcea434ea87f56d940bf6e6bc3b822}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!drawRect@{drawRect}}
+\index{drawRect@{drawRect}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{drawRect()}{drawRect()}}
+{\footnotesize\ttfamily void olc\+Console\+Game\+Engine\+::draw\+Rect (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{xm,  }\item[{int}]{ym,  }\item[{const COLORREF \&}]{color = {\ttfamily WHITE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+draw a rectangle from (x, y) to (mx, my) of given color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em xm} & \\
+\hline
+{\em ym} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classolc_console_game_engine_a7751878a421867ab3341699268ac3ca8}\label{classolc_console_game_engine_a7751878a421867ab3341699268ac3ca8}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!drawText@{drawText}}
+\index{drawText@{drawText}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void olc\+Console\+Game\+Engine\+::draw\+Text (\begin{DoxyParamCaption}\item[{COORD}]{pos,  }\item[{const LPCWSTR \&}]{str,  }\item[{const COLORREF \&}]{color = {\ttfamily WHITE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+draw tex at position in given color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+{\em str} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classolc_console_game_engine_af8d2e21dbf8d70b224e5035f51251293}\label{classolc_console_game_engine_af8d2e21dbf8d70b224e5035f51251293}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!drawText@{drawText}}
+\index{drawText@{drawText}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void olc\+Console\+Game\+Engine\+::draw\+Text (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{line,  }\item[{size\+\_\+t}]{offset,  }\item[{const LPCWSTR \&}]{str,  }\item[{const COLORREF \&}]{color = {\ttfamily WHITE} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+draw text at given line and offset from left of given color.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & \\
+\hline
+{\em offset} & \\
+\hline
+{\em str} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classolc_console_game_engine_a2d1825eefbf08d3d452cf0fef93c48f1}\label{classolc_console_game_engine_a2d1825eefbf08d3d452cf0fef93c48f1}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!endPaint@{endPaint}}
+\index{endPaint@{endPaint}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{endPaint()}{endPaint()}}
+{\footnotesize\ttfamily void olc\+Console\+Game\+Engine\+::end\+Paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+end\+Paint must be called before every paint. it send the buffer to be rendered \mbox{\Hypertarget{classolc_console_game_engine_a13189b928731ef61b4022072edbcbb6e}\label{classolc_console_game_engine_a13189b928731ef61b4022072edbcbb6e}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!OnUserCreate@{OnUserCreate}}
+\index{OnUserCreate@{OnUserCreate}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{OnUserCreate()}{OnUserCreate()}}
+{\footnotesize\ttfamily virtual bool olc\+Console\+Game\+Engine\+::\+On\+User\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+must implement . the user can add on\+Create procedures \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_demo_a3094a1a7adda6bfc5fc7b988e933e6ec}{Demo}}.
+
+\mbox{\Hypertarget{classolc_console_game_engine_a3ee962119360d35a3939078a04e89cf0}\label{classolc_console_game_engine_a3ee962119360d35a3939078a04e89cf0}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!OnUserDestroy@{OnUserDestroy}}
+\index{OnUserDestroy@{OnUserDestroy}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{OnUserDestroy()}{OnUserDestroy()}}
+{\footnotesize\ttfamily virtual bool olc\+Console\+Game\+Engine\+::\+On\+User\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+must implement . the user can add on\+Delete procedures \begin{DoxyReturn}{Returns}
+true if did finish 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classolc_console_game_engine_ab6fa27165340ce35e5bd3067d0f561c5}\label{classolc_console_game_engine_ab6fa27165340ce35e5bd3067d0f561c5}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!OnUserUpdate@{OnUserUpdate}}
+\index{OnUserUpdate@{OnUserUpdate}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{OnUserUpdate()}{OnUserUpdate()}}
+{\footnotesize\ttfamily virtual bool olc\+Console\+Game\+Engine\+::\+On\+User\+Update (\begin{DoxyParamCaption}\item[{float}]{f\+Elapsed\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+must implement. the user can add on\+Update procedures 
+\begin{DoxyParams}{Parameters}
+{\em f\+Elapsed\+Time} & is the time elapsed since last call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_demo_a60ab0429ed34aa24269c4c686dda8eca}{Demo}}.
+
+\mbox{\Hypertarget{classolc_console_game_engine_a25835d79f53da4a36850559f8f1226ed}\label{classolc_console_game_engine_a25835d79f53da4a36850559f8f1226ed}} 
+\index{olcConsoleGameEngine@{olcConsoleGameEngine}!Start@{Start}}
+\index{Start@{Start}!olcConsoleGameEngine@{olcConsoleGameEngine}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void olc\+Console\+Game\+Engine\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+start the game loop. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Consol\+Renderer/ol\+Console.\+h\end{DoxyCompactItemize}

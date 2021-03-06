@@ -1,0 +1,16 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Infos}\label{md__r_e_a_d_m_e_autotoc_md1}
+Projet developpe et teste sous visual studio 2019 et sous windows 10 x86\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Structure du projet}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Consol\+Renderer \+: librairie permettant le rendu d\textquotesingle{}objet dans la console windows ainsi que la gstion des evenements clavier et de la gameloop
+\item Game\+Lib \+: librairie contenant les classes principales, la logique du jeu (grid, player, grid Manager ...)
+\item Game\+Test \+: tests unitaires de Game\+Lib
+\item Game \+: projet executable, implementation du jeu en utilisant Consol\+Renderer et Game\+Lib
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{Remarques}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyEnumerate}
+\item je n\textquotesingle{}ai par reussi a charger un fichier dans les test unitaires (probleme de chemins), je n\textquotesingle{}ai donc pu tester ce qui y est lie
+\item l\textquotesingle{}application ne fonctionne que pour windows 2000 et plus (compatibilitee de $<$window.\+h$>$)
+\item j\textquotesingle{}ai commence par un affichage en cout mais je rencontrai des problemes d\textquotesingle{}affichage lies a la taille de la fenetre et ce n\textquotesingle{}etait pas tres joli. je me suis donc plus tard tourne vers la solution actuelle.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{credits}\label{md__r_e_a_d_m_e_autotoc_md4}
+merci a @\+Javidx9, pour le code de la game loop et le system de keyevent 

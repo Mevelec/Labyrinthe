@@ -1,0 +1,198 @@
+\hypertarget{class_game_engine_1_1_grid}{}\doxysection{Game\+Engine\+::Grid Class Reference}
+\label{class_game_engine_1_1_grid}\index{GameEngine::Grid@{GameEngine::Grid}}
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_engine_1_1_grid_ab49408882dd9d7846f5f2b19ebb0ff6c}{Grid}} (const wchar\+\_\+t $\ast$name, const size\+\_\+t \&x, const size\+\_\+t \&y)
+\item 
+Tile\+Type \mbox{\hyperlink{class_game_engine_1_1_grid_a71542678c4ccc094cdbfd4f5daa8eafb}{at}} (const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&pos)
+\item 
+Tile\+Type \mbox{\hyperlink{class_game_engine_1_1_grid_acc2999c23a4a7b242d3f4dd56375877d}{at}} (size\+\_\+t x, size\+\_\+t y)
+\item 
+Tile\+Type \mbox{\hyperlink{class_game_engine_1_1_grid_afe04949199bcee3deae30ae9dda1d182}{ator}} (size\+\_\+t x, size\+\_\+t y, Tile\+Type type=Tile\+Type\+::\+\_\+\+Default)
+\item 
+Tile\+Type \mbox{\hyperlink{class_game_engine_1_1_grid_aec14852f364b6a13e2b72ed9d8d5fe46}{ator}} (const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&pos, Tile\+Type type=Tile\+Type\+::\+\_\+\+Default)
+\item 
+void \mbox{\hyperlink{class_game_engine_1_1_grid_aec677d13f256c3eefaa3779bc1bf5898}{set}} (Tile\+Type type, const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&pos)
+\item 
+void \mbox{\hyperlink{class_game_engine_1_1_grid_adca7b7b1d90a298bca0026444206951a}{set}} (Tile\+Type type, size\+\_\+t x, size\+\_\+t y)
+\item 
+size\+\_\+t \mbox{\hyperlink{class_game_engine_1_1_grid_a87c173affd58ecfae18d5ec59ccf09ee}{size\+\_\+x}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{class_game_engine_1_1_grid_a11b1f16b7d09640e599fc736ef2afd98}{size\+\_\+y}} ()
+\item 
+std\+::vector$<$ std\+::vector$<$ Tile\+Type $>$ $>$ \mbox{\hyperlink{class_game_engine_1_1_grid_a49c0419a03e2f6a829c8f4f4aac0f221}{grid}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_grid_afb5b4fba3f1e95fb76805cd7e759cfd5}\label{class_game_engine_1_1_grid_afb5b4fba3f1e95fb76805cd7e759cfd5}} 
+const wchar\+\_\+t $\ast$ {\bfseries m\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class containing data of a maze. a \mbox{\hyperlink{class_game_engine_1_1_grid}{Grid}} contain Tyile\+Types values in a 2D \mbox{\hyperlink{class_game_engine_1_1_grid}{Grid}} of size x, y 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_ab49408882dd9d7846f5f2b19ebb0ff6c}\label{class_game_engine_1_1_grid_ab49408882dd9d7846f5f2b19ebb0ff6c}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily Game\+Engine\+::\+Grid\+::\+Grid (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{name,  }\item[{const size\+\_\+t \&}]{x,  }\item[{const size\+\_\+t \&}]{y }\end{DoxyParamCaption})}
+
+Default construct of \mbox{\hyperlink{class_game_engine_1_1_grid}{Grid}}. of size x and y and given name, the tiles are set to \+\_\+\+Default type 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_a71542678c4ccc094cdbfd4f5daa8eafb}\label{class_game_engine_1_1_grid_a71542678c4ccc094cdbfd4f5daa8eafb}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!at@{at}}
+\index{at@{at}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tile\+Type Game\+Engine\+::\+Grid\+::at (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&}]{pos }\end{DoxyParamCaption})}
+
+acces Tile\+Type at given \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tile\+Type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_acc2999c23a4a7b242d3f4dd56375877d}\label{class_game_engine_1_1_grid_acc2999c23a4a7b242d3f4dd56375877d}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!at@{at}}
+\index{at@{at}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tile\+Type Game\+Engine\+::\+Grid\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+acces Tile\+Type type at given x and y.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tile\+Type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_aec14852f364b6a13e2b72ed9d8d5fe46}\label{class_game_engine_1_1_grid_aec14852f364b6a13e2b72ed9d8d5fe46}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!ator@{ator}}
+\index{ator@{ator}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{ator()}{ator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Tile\+Type Game\+Engine\+::\+Grid\+::ator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&}]{pos,  }\item[{Tile\+Type}]{type = {\ttfamily TileType\+:\+:\+\_\+Default} }\end{DoxyParamCaption})}
+
+acces Tile\+Type at given \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}}, and if do not exist(position not in grid return default or specified Tile\+Type).
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tile\+Type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_afe04949199bcee3deae30ae9dda1d182}\label{class_game_engine_1_1_grid_afe04949199bcee3deae30ae9dda1d182}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!ator@{ator}}
+\index{ator@{ator}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{ator()}{ator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Tile\+Type Game\+Engine\+::\+Grid\+::ator (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y,  }\item[{Tile\+Type}]{type = {\ttfamily TileType\+:\+:\+\_\+Default} }\end{DoxyParamCaption})}
+
+acces Tile\+Type at given x and y, and if do not exist(position not in grid return default or specified Tile\+Type).
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & by default \+\_\+\+Default type \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_a49c0419a03e2f6a829c8f4f4aac0f221}\label{class_game_engine_1_1_grid_a49c0419a03e2f6a829c8f4f4aac0f221}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!grid@{grid}}
+\index{grid@{grid}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{grid()}{grid()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$Tile\+Type$>$ $>$ Game\+Engine\+::\+Grid\+::grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return copy of the current grid.
+
+\begin{DoxyReturn}{Returns}
+grid \+: std\+::vector$<$ std\+::vector$<$\+Tile\+Type$>$$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_aec677d13f256c3eefaa3779bc1bf5898}\label{class_game_engine_1_1_grid_aec677d13f256c3eefaa3779bc1bf5898}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!set@{set}}
+\index{set@{set}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Engine\+::\+Grid\+::set (\begin{DoxyParamCaption}\item[{Tile\+Type}]{type,  }\item[{const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&}]{pos }\end{DoxyParamCaption})}
+
+set the given Tile\+Type at the given position, if do not exist do nothing(position not in grid).
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tile\+Type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_adca7b7b1d90a298bca0026444206951a}\label{class_game_engine_1_1_grid_adca7b7b1d90a298bca0026444206951a}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!set@{set}}
+\index{set@{set}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Engine\+::\+Grid\+::set (\begin{DoxyParamCaption}\item[{Tile\+Type}]{type,  }\item[{size\+\_\+t}]{x,  }\item[{size\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+set he given Tile\+Type at the given x and y, if do not exist do nothing(position not in grid).
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_a87c173affd58ecfae18d5ec59ccf09ee}\label{class_game_engine_1_1_grid_a87c173affd58ecfae18d5ec59ccf09ee}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!size\_x@{size\_x}}
+\index{size\_x@{size\_x}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{size\_x()}{size\_x()}}
+{\footnotesize\ttfamily size\+\_\+t Game\+Engine\+::\+Grid\+::size\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return copy of size x.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_a11b1f16b7d09640e599fc736ef2afd98}\label{class_game_engine_1_1_grid_a11b1f16b7d09640e599fc736ef2afd98}} 
+\index{GameEngine::Grid@{GameEngine::Grid}!size\_y@{size\_y}}
+\index{size\_y@{size\_y}!GameEngine::Grid@{GameEngine::Grid}}
+\doxysubsubsection{\texorpdfstring{size\_y()}{size\_y()}}
+{\footnotesize\ttfamily size\+\_\+t Game\+Engine\+::\+Grid\+::size\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return copy of size y.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Lib/Grid.\+h\item 
+Game\+Lib/Grid.\+cpp\end{DoxyCompactItemize}

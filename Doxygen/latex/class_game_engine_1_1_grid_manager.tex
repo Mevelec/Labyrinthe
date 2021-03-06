@@ -1,0 +1,76 @@
+\hypertarget{class_game_engine_1_1_grid_manager}{}\doxysection{Game\+Engine\+::Grid\+Manager Class Reference}
+\label{class_game_engine_1_1_grid_manager}\index{GameEngine::GridManager@{GameEngine::GridManager}}
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_engine_1_1_grid_manager_aa61336306be74aad00f418d02d6c556b}{generate}} (const wchar\+\_\+t $\ast$name, const char $\ast$path)
+\item 
+bool \mbox{\hyperlink{class_game_engine_1_1_grid_manager_a569834b61fb947b00c544dfa398e1493}{load}} (size\+\_\+t i)
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_game_engine_1_1_grid}{Grid}} $>$ $\ast$ \mbox{\hyperlink{class_game_engine_1_1_grid_manager_a3aa2e54902dbfa751c2eea866c0d6ef6}{current}} () const
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_grid_manager_a586822b9527ea90661f503b45c8c9422}\label{class_game_engine_1_1_grid_manager_a586822b9527ea90661f503b45c8c9422}} 
+{\bfseries Grid\+Manager} (\mbox{\hyperlink{class_game_engine_1_1_grid_manager}{Grid\+Manager}} const \&)=delete
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_grid_manager_a7078770782626944546c600b708390e6}\label{class_game_engine_1_1_grid_manager_a7078770782626944546c600b708390e6}} 
+void {\bfseries operator=} (\mbox{\hyperlink{class_game_engine_1_1_grid_manager}{Grid\+Manager}} const \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_grid_manager_ac6fefd03e0a21c7ed447b953c4a203e6}\label{class_game_engine_1_1_grid_manager_ac6fefd03e0a21c7ed447b953c4a203e6}} 
+static \mbox{\hyperlink{class_game_engine_1_1_grid_manager}{Grid\+Manager}} \& {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+clas to manage grids. this class is a singleton all manipulation on a grid must passs through this class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_manager_a3aa2e54902dbfa751c2eea866c0d6ef6}\label{class_game_engine_1_1_grid_manager_a3aa2e54902dbfa751c2eea866c0d6ef6}} 
+\index{GameEngine::GridManager@{GameEngine::GridManager}!current@{current}}
+\index{current@{current}!GameEngine::GridManager@{GameEngine::GridManager}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_game_engine_1_1_grid}{Grid}} $>$ $\ast$ Game\+Engine\+::\+Grid\+Manager\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+return current loaded grid.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_manager_aa61336306be74aad00f418d02d6c556b}\label{class_game_engine_1_1_grid_manager_aa61336306be74aad00f418d02d6c556b}} 
+\index{GameEngine::GridManager@{GameEngine::GridManager}!generate@{generate}}
+\index{generate@{generate}!GameEngine::GridManager@{GameEngine::GridManager}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily bool Game\+Engine\+::\+Grid\+Manager\+::generate (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{name,  }\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+create a grid from a path with the given name. this method do not ensure the size of the final grid therfore evey line and cols in the given file must be of the same size 
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_grid_manager_a569834b61fb947b00c544dfa398e1493}\label{class_game_engine_1_1_grid_manager_a569834b61fb947b00c544dfa398e1493}} 
+\index{GameEngine::GridManager@{GameEngine::GridManager}!load@{load}}
+\index{load@{load}!GameEngine::GridManager@{GameEngine::GridManager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool Game\+Engine\+::\+Grid\+Manager\+::load (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{i }\end{DoxyParamCaption})}
+
+load specified grid.
+
+if i is out of range do nothing
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Lib/Grid.\+h\item 
+Game\+Lib/Grid.\+cpp\end{DoxyCompactItemize}

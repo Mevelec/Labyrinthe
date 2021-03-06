@@ -1,0 +1,155 @@
+\hypertarget{class_game_engine_1_1_character}{}\doxysection{Game\+Engine\+::Character Class Reference}
+\label{class_game_engine_1_1_character}\index{GameEngine::Character@{GameEngine::Character}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Game\+Engine\+::Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_engine_1_1_character}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_engine_1_1_character_a16e9fdf7cb333532a84945b94a31da50}{Character}} (const char $\ast$)
+\item 
+\mbox{\hyperlink{class_game_engine_1_1_character_a26a66b1cd89572641c48b4deb3686d0f}{Character}} (const char $\ast$, const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&pos)
+\item 
+const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \& \mbox{\hyperlink{class_game_engine_1_1_character_ac34e982a3d82d94a7432ed548198433e}{get\+Position}} ()
+\item 
+virtual void \mbox{\hyperlink{class_game_engine_1_1_character_a62d57cfa058edc7e06daea66fb629fc3}{step}} ()
+\item 
+bool \mbox{\hyperlink{class_game_engine_1_1_character_a77776b1073a36cbb4892bb933041ce3a}{finished}} ()
+\item 
+void \mbox{\hyperlink{class_game_engine_1_1_character_aec32cfe3c8060fa0816a6bcaacd8c63a}{set\+IA}} (\mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}} $\ast$ia)
+\item 
+const \mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}} $\ast$ \mbox{\hyperlink{class_game_engine_1_1_character_a2ffac4dcca8f566859e5e3cb00258c4c}{get\+IA}} ()
+\item 
+void \mbox{\hyperlink{class_game_engine_1_1_character_ad51eb163aab03cf3957ba235a3ad7b77}{set\+Pos}} (const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_character_a24f00e32fd46872407a10869a746ead9}\label{class_game_engine_1_1_character_a24f00e32fd46872407a10869a746ead9}} 
+const char $\ast$ {\bfseries m\+\_\+name}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_character_acb1c598b8384cb11dcc453a874142dca}\label{class_game_engine_1_1_character_acb1c598b8384cb11dcc453a874142dca}} 
+\mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} {\bfseries m\+\_\+pos}
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_character_a8a7bb5d309975cae84e1f71267128225}\label{class_game_engine_1_1_character_a8a7bb5d309975cae84e1f71267128225}} 
+\mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}} $\ast$ {\bfseries m\+\_\+\+IA}
+\item 
+\mbox{\Hypertarget{class_game_engine_1_1_character_adfc86fa0530fc9a0383fbc03714d628c}\label{class_game_engine_1_1_character_adfc86fa0530fc9a0383fbc03714d628c}} 
+bool {\bfseries m\+\_\+finished}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_game_engine_1_1_character}{Character}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_engine_1_1_character_a16e9fdf7cb333532a84945b94a31da50}\label{class_game_engine_1_1_character_a16e9fdf7cb333532a84945b94a31da50}} 
+\index{GameEngine::Character@{GameEngine::Character}!Character@{Character}}
+\index{Character@{Character}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Engine\+::\+Character\+::\+Character (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+construct a character. at pos (0,0) and given name and no \mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}} 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_character_a26a66b1cd89572641c48b4deb3686d0f}\label{class_game_engine_1_1_character_a26a66b1cd89572641c48b4deb3686d0f}} 
+\index{GameEngine::Character@{GameEngine::Character}!Character@{Character}}
+\index{Character@{Character}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Engine\+::\+Character\+::\+Character (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&}]{pos }\end{DoxyParamCaption})}
+
+construct a character. at given pos (0,0) and name and with no \mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}} 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_engine_1_1_character_a77776b1073a36cbb4892bb933041ce3a}\label{class_game_engine_1_1_character_a77776b1073a36cbb4892bb933041ce3a}} 
+\index{GameEngine::Character@{GameEngine::Character}!finished@{finished}}
+\index{finished@{finished}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{finished()}{finished()}}
+{\footnotesize\ttfamily bool Game\+Engine\+::\+Character\+::finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+check if the player finished the maze.
+
+\begin{DoxyReturn}{Returns}
+true if finished 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_character_a2ffac4dcca8f566859e5e3cb00258c4c}\label{class_game_engine_1_1_character_a2ffac4dcca8f566859e5e3cb00258c4c}} 
+\index{GameEngine::Character@{GameEngine::Character}!getIA@{getIA}}
+\index{getIA@{getIA}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{getIA()}{getIA()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}}$\ast$ Game\+Engine\+::\+Character\+::get\+IA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+acces the current \mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}}.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_character_ac34e982a3d82d94a7432ed548198433e}\label{class_game_engine_1_1_character_ac34e982a3d82d94a7432ed548198433e}} 
+\index{GameEngine::Character@{GameEngine::Character}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}}\& Game\+Engine\+::\+Character\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return current position of the character.
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_engine_1_1_character_aec32cfe3c8060fa0816a6bcaacd8c63a}\label{class_game_engine_1_1_character_aec32cfe3c8060fa0816a6bcaacd8c63a}} 
+\index{GameEngine::Character@{GameEngine::Character}!setIA@{setIA}}
+\index{setIA@{setIA}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{setIA()}{setIA()}}
+{\footnotesize\ttfamily void Game\+Engine\+::\+Character\+::set\+IA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}} $\ast$}]{ia }\end{DoxyParamCaption})}
+
+set an \mbox{\hyperlink{class_game_engine_1_1_i_a}{IA}} to the character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ia} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_character_ad51eb163aab03cf3957ba235a3ad7b77}\label{class_game_engine_1_1_character_ad51eb163aab03cf3957ba235a3ad7b77}} 
+\index{GameEngine::Character@{GameEngine::Character}!setPos@{setPos}}
+\index{setPos@{setPos}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Game\+Engine\+::\+Character\+::set\+Pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+set position of the character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_engine_1_1_character_a62d57cfa058edc7e06daea66fb629fc3}\label{class_game_engine_1_1_character_a62d57cfa058edc7e06daea66fb629fc3}} 
+\index{GameEngine::Character@{GameEngine::Character}!step@{step}}
+\index{step@{step}!GameEngine::Character@{GameEngine::Character}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void Game\+Engine\+::\+Character\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+let the player increment it\textquotesingle{}s steps . player move in time 
+
+Implements \mbox{\hyperlink{class_game_engine_1_1_runable}{Game\+Engine\+::\+Runable}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Lib/Player.\+h\item 
+Game\+Lib/Player.\+cpp\end{DoxyCompactItemize}

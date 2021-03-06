@@ -1,0 +1,87 @@
+\hypertarget{struct_game_engine_1_1_position}{}\doxysection{Game\+Engine\+::Position Struct Reference}
+\label{struct_game_engine_1_1_position}\index{GameEngine::Position@{GameEngine::Position}}
+
+
+{\ttfamily \#include $<$Position.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_game_engine_1_1_position_a1d9d695e81e164c912920d0911a10982}{Position}} (size\+\_\+t x=0, size\+\_\+t y=0)
+\item 
+bool \mbox{\hyperlink{struct_game_engine_1_1_position_a1846df582adb97d5f2fd316df1e74539}{operator==}} (const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&c) const
+\item 
+\mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \mbox{\hyperlink{struct_game_engine_1_1_position_a66aec4f9e6d6c40a38b1a833c12db96b}{operator+}} (const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&c) const
+\item 
+\mbox{\Hypertarget{struct_game_engine_1_1_position_a82325633408c0e1d01f2760733469488}\label{struct_game_engine_1_1_position_a82325633408c0e1d01f2760733469488}} 
+void {\bfseries set} (size\+\_\+t x, size\+\_\+t y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_game_engine_1_1_position_acb831c3de168b22ffbd42a674c5312f8}\label{struct_game_engine_1_1_position_acb831c3de168b22ffbd42a674c5312f8}} 
+int {\bfseries x}
+\item 
+\mbox{\Hypertarget{struct_game_engine_1_1_position_a1d09ba7d99b538d2f2490a26eaaa019b}\label{struct_game_engine_1_1_position_a1d09ba7d99b538d2f2490a26eaaa019b}} 
+int {\bfseries y}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} structure. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_game_engine_1_1_position_a1d9d695e81e164c912920d0911a10982}\label{struct_game_engine_1_1_position_a1d9d695e81e164c912920d0911a10982}} 
+\index{GameEngine::Position@{GameEngine::Position}!Position@{Position}}
+\index{Position@{Position}!GameEngine::Position@{GameEngine::Position}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}}
+{\footnotesize\ttfamily Game\+Engine\+::\+Position\+::\+Position (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x = {\ttfamily 0},  }\item[{size\+\_\+t}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+construct a position. by default at pos(0,0) 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_game_engine_1_1_position_a66aec4f9e6d6c40a38b1a833c12db96b}\label{struct_game_engine_1_1_position_a66aec4f9e6d6c40a38b1a833c12db96b}} 
+\index{GameEngine::Position@{GameEngine::Position}!operator+@{operator+}}
+\index{operator+@{operator+}!GameEngine::Position@{GameEngine::Position}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} Game\+Engine\+::\+Position\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&}]{c }\end{DoxyParamCaption}) const}
+
+add 2 coordinates together.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_game_engine_1_1_position_a1846df582adb97d5f2fd316df1e74539}\label{struct_game_engine_1_1_position_a1846df582adb97d5f2fd316df1e74539}} 
+\index{GameEngine::Position@{GameEngine::Position}!operator==@{operator==}}
+\index{operator==@{operator==}!GameEngine::Position@{GameEngine::Position}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Game\+Engine\+::\+Position\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_game_engine_1_1_position}{Position}} \&}]{c }\end{DoxyParamCaption}) const}
+
+compare 2 position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if are at the same coordinates 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+Lib/Position.\+h\item 
+Game\+Lib/Position.\+cpp\end{DoxyCompactItemize}
